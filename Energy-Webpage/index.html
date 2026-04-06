@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Energy Appliances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo" onclick="showPage('home')">
+        <img src="images/PowerIcon.png" alt="Power Logo">
+    </div>
+
+    <nav>
+        <ul>
+            <li onclick="showPage('home')" id="nav-home">Home</li>
+            <li onclick="showPage('tv')" id="nav-tv">Televisions</li>
+            <li onclick="showPage('about')" id="nav-about">About Us</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section id="home" class="page">
+        <h1>Welcome</h1>
+        <p>Explore the energy consumption of household appliances.</p>
+
+        <table class="data-table">
+            <thead>
+                <tr><th>Item</th><th>Power</th><th>Hours</th></tr>
+            </thead>
+            <tbody id="homeTable"></tbody>
+        </table>
+    </section>
+
+    <section id="tv" class="page hidden">
+        <h1>Televisions</h1>
+        <p>Modern TVs differs in energy usage depending on size and technology.</p>
+
+        <table class="data-table">
+            <thead>
+                <tr><th>TV</th><th>Power</th><th>Hours</th></tr>
+            </thead>
+            <tbody id="tvTable"></tbody>
+        </table>
+    </section>
+
+    <section id="about" class="page hidden">
+        <h1>About Us</h1>
+        <p>This project was developed for the purpose of the course exercise of Data Visualisation COS30045 under the Swinburne University of Technology.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Lee Chee Cung</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
